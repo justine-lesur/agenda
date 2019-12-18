@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	    <link rel="stylesheet" href="agenda.css">
+<title>Document sans nom</title>
+</head>
+
+<body>
+	<nav>
+		<ul>
+        <li class="link"><a href="agenda.html"><p class="lien">Agenda</p></a></li>
+        <li class="link"><a href="formulaire.html"><p class="lien">Formulaire</p></a></li>
+		</ul>
+	</nav>
+	<h2 id="evenement">Ajouter un événement</h2>
+	
+	<section class="colonnes">
+	<div class="conteneur-fleche">
+		<img src="images/fleche.png" alt="fleche" id="fleche"/>
+	</div>
+	
+	<form method="post">
+	  <label>
+        <input type="text" name="login" class="largeur" id="titre" placeholder="titre*" required/>
+		 <br/>
+	  	 <br/>
+	  </label>
+		
+	  <label>
+        <input type="text" name="login" class="largeur" id="description" placeholder="description*" required/>
+		 <br/>
+	  	 <br/>
+	  </label>
+		
+	  <label>
+	    <select name="pays" class="largeur" id="categorie" required>
+		  <option value="cat" disabled selected>Catégorie*</option>
+          <option value="cat">Professionnel</option>
+		  <option value="cat">Divers</option>
+	    </select>
+		 <br/>
+		 <br/>
+	  </label>
+		
+	  <label>
+	   <input type="date" class="largeur" name="trip-start" id="date">
+		 <br/>
+		 <br/>
+	  </label>
+		
+	  <label>
+		 <input type="time" class="largeur" name="trip-start" id="time">
+		 <br/>
+	  	 <br/>
+	  </label>
+		
+	   <label>
+	  	<input type="submit" id="bouton" value="Valider" />
+		 <br/>
+	  	 <br/>
+	  </label>
+	 </form>
+	</section>
+</body>
+</html>
